@@ -1,3 +1,5 @@
+"use client";
+import Image from "next/image";
 import {
   Sidebar,
   SidebarContent,
@@ -5,8 +7,11 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  useSidebar,
 } from "../ui/sidebar";
 import { History, LayoutDashboard, Inbox, Settings } from "lucide-react";
+import Logo from "@/public/logo.png";
+import Link from "next/link";
 const items = [
   {
     title: "Dashboard",
@@ -31,9 +36,20 @@ const items = [
 ];
 
 function AppSidebar() {
+  const { open } = useSidebar();
   return (
-    <Sidebar>
-      <SidebarHeader></SidebarHeader>
+    <Sidebar collapsible="icon">
+      {open && (
+        <SidebarHeader>
+          <Link href={"/"} className="w-full h-full flex items-center gap-2">
+            <Image src={Logo.src} width={100} height={50} alt="SidebarLogo" />
+            <h2 className="text-xs">
+              Generate REST Docs With{" "}
+              <strong className="text-primary">Ease</strong>
+            </h2>
+          </Link>
+        </SidebarHeader>
+      )}
       <SidebarContent>
         <SidebarMenu className="bg-card">
           {items.map((item) => (
