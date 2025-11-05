@@ -7,6 +7,7 @@ import {
   SidebarMenu,
   SidebarMenuButton,
   SidebarMenuItem,
+  SidebarTrigger,
   useSidebar,
 } from "../ui/sidebar";
 import { History, LayoutDashboard, Inbox, Settings } from "lucide-react";
@@ -39,6 +40,8 @@ function AppSidebar() {
   const { open } = useSidebar();
   return (
     <Sidebar collapsible="icon">
+      <SidebarTrigger className="ml-auto" />
+
       {open && (
         <SidebarHeader>
           <Link href={"/"} className="w-full h-full flex items-center gap-2">

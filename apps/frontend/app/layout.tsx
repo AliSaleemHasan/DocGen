@@ -4,6 +4,7 @@ import "./globals.css";
 import AppSidebar from "@/components/layout/AppSidebar";
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { cookies } from "next/headers";
+import { ThemeProvider } from "@/components/layout/AppThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -28,20 +29,21 @@ export default async function RootLayout({
   const cookieStore = await cookies();
   const defaultOpen = cookieStore.get("sidebar_state")?.value === "true";
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased max-w-full flex min-h-screen items-center justify-center bg-background text-foreground`}
       >
-        <SidebarProvider defaultOpen={defaultOpen}>
-          <AppSidebar />
-          <main className="flex min-h-screen   flex-col items-center justify-between   sm:items-start ">
-            <SidebarTrigger />
+        <ThemeProvider>
+          <SidebarProvider defaultOpen={defaultOpen}>
+            <AppSidebar />
 
-            {children}
+            <main className=" px-10 flex min-h-screen  w-full  flex-col items-center justify-between   sm:items-start ">
+              {children}
 
-            <p>this is test</p>
-          </main>
-        </SidebarProvider>
+              <p>this is test</p>
+            </main>
+          </SidebarProvider>
+        </ThemeProvider>
       </body>
     </html>
   );
