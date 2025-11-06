@@ -39,8 +39,6 @@ export default async function RootLayout({
 
             <main className=" px-10 flex min-h-screen  w-full  flex-col items-center justify-between   sm:items-start ">
               {children}
-
-              <p>this is test</p>
             </main>
           </SidebarProvider>
         </ThemeProvider>
