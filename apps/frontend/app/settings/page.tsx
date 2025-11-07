@@ -1,3 +1,4 @@
+import DeleteAccountCard from "@/components/Cards/DeleteAccountCard";
 import PasswordCard from "@/components/Cards/PasswordCard";
 import PersonalDetails from "@/components/Cards/PersonalDetails";
 import ThemeCard from "@/components/Cards/ThemeCard";
@@ -20,7 +21,9 @@ const SettingsPage = () => {
         <section>
           <PersonalDetails />
         </section>
-        <section></section>
+        <section>
+          <DeleteAccountCard />
+        </section>
       </div>
     </div>
   );
