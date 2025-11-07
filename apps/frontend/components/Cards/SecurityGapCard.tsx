@@ -1,9 +1,4 @@
-import {
-  Check,
-  MessageCircleWarning,
-  MessageCircleWarningIcon,
-  TriangleAlert,
-} from "lucide-react";
+import { TriangleAlert } from "lucide-react";
 import {
   Card,
   CardContent,
@@ -17,7 +12,7 @@ const SecurityGapCard = () => {
   return (
     <Card
       className=" flex-1 flex flex-col justify-between  
-         px-20  "
+         px-5  "
     >
       <CardHeader>
         <CardTitle className="">
@@ -30,9 +25,7 @@ const SecurityGapCard = () => {
       <CardContent className=" ">
         <div className="flex flex-1 flex-col gap-3">
           <section className="flex items-center justify-between">
-            <h2 className=" text-primary ">
-              5 Security Gaps in 3 different endpoints
-            </h2>
+            <h2 className="  ">5 Security Gaps in 3 different endpoints</h2>
 
             <div className="bg-yellow-500 rounded-full p-2 w-8 h-8 flex items-center justify-center">
               <p className=" text-black font-normal text-center text-2xl">!</p>

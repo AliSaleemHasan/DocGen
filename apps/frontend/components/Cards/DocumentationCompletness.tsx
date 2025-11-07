@@ -5,7 +5,7 @@ const DocumentationCompletness = () => {
   return (
     <Card
       className=" flex-1 flex flex-col justify-between  
-         px-20  "
+         px-5  "
     >
       <CardHeader>
         <CardTitle className=" text-2xl">Overview</CardTitle>
