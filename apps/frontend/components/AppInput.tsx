@@ -26,7 +26,7 @@ export default function AppInput({
       // 1. Apply standard shadcn Input base styles to this parent div
       // 2. Use 'focus-within' instead of 'focus-visible' for the ring
       className={cn(
-        "flex  h-fit w-full items-center rounded-md  shadow-lg bg-muted/40 p-5 text-sm  cursor-text gap-2",
+        "flex  h-fit w-full items-center rounded-md  shadow-sm bg-muted/20 p-5 text-sm  cursor-text gap-2",
         className
       )}
     >
