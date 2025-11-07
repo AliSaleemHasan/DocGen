@@ -9,6 +9,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@radix-ui/react-collapsible";
+import EndpointExampleDrawer from "./EndpointExampleDrawer";
 
 interface Props {
   endpoint: {
@@ -35,15 +36,20 @@ const Endpoint = ({ endpoint }: Props) => {
           </div>
           <h4 className="text-sm">{endpoint.url}</h4>
         </ListItemDescreption>
-        <Button className="cursor-pointer" variant={"outline"} asChild>
-          <CollapsibleTrigger asChild>
-            <ListItemAction>
-              <p className="text-sm">Details</p>
-              <Eye />
-            </ListItemAction>
-          </CollapsibleTrigger>
-        </Button>
+
+        <section className="flex items-center gap-5">
+          <EndpointExampleDrawer></EndpointExampleDrawer>
+          <Button className="cursor-pointer" variant={"outline"} asChild>
+            <CollapsibleTrigger asChild>
+              <ListItemAction>
+                <p className="text-sm">Details</p>
+                <Eye />
+              </ListItemAction>
+            </CollapsibleTrigger>
+          </Button>
+        </section>
       </ListItem>
+
       <CollapsibleContent className="flex flex-col gap-2 p-5">
         <p>
           Here all content of this enpoint will be listed , from description
