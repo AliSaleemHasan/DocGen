@@ -10,7 +10,7 @@ import {
   SidebarTrigger,
   useSidebar,
 } from "../ui/sidebar";
-import { History, LayoutDashboard, Inbox, Settings } from "lucide-react";
+import { History, LayoutDashboard, PlusCircle, Settings } from "lucide-react";
 import Logo from "@/public/logo.png";
 import Link from "next/link";
 const items = [
@@ -21,8 +21,8 @@ const items = [
   },
   {
     title: "New Docs",
-    url: "#",
-    icon: Inbox,
+    url: "/",
+    icon: PlusCircle,
   },
   {
     title: "History",
@@ -40,7 +40,9 @@ function AppSidebar() {
   const { open } = useSidebar();
   return (
     <Sidebar collapsible="icon">
-      <SidebarTrigger className="ml-auto" />
+      <div className=" w-full flex justify-end">
+        <SidebarTrigger className="px-6 text-primary " variant={"secondary"} />
+      </div>
 
       {open && (
         <SidebarHeader>
@@ -57,7 +59,7 @@ function AppSidebar() {
         <SidebarMenu className="bg-card">
           {items.map((item) => (
             <SidebarMenuItem key={item.title}>
-              <SidebarMenuButton className="h-14 px-6" asChild>
+              <SidebarMenuButton className="h-14 px-6 m-auto" asChild>
                 <a href={item.url}>
                   <item.icon />
                   <span className="ml-2">{item.title}</span>

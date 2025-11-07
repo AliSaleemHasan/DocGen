@@ -15,7 +15,7 @@ const ThemeCard = () => {
           </h4>
         </section>
 
-        <section className="flex items-center gap-10 flex-wrap">
+        <section className="flex   items-center gap-10 flex-wrap">
           <ThemeButton name="light" />
           <ThemeButton name="dark" />
         </section>
