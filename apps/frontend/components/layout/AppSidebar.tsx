@@ -31,7 +31,7 @@ const items = [
   },
   {
     title: "Account Settings",
-    url: "#",
+    url: "/settings",
     icon: Settings,
   },
 ];
