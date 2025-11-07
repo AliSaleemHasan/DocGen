@@ -1,12 +1,16 @@
+import PasswordCard from "@/components/Cards/PasswordCard";
 import PersonalDetails from "@/components/Cards/PersonalDetails";
 import MainHeader from "@/components/layout/MainHeader";
-import React from "react";
 
 const SettingsPage = () => {
   return (
-    <div>
+    <div className=" container mx-auto  ">
       <MainHeader title="Account Settings" />
-      <PersonalDetails />
+      <section className="grid grid-cols-1 md:grid-cols-2  gap-5">
+        <PersonalDetails />
+        <PasswordCard />
+      </section>
+      <section></section>
     </div>
   );
 };

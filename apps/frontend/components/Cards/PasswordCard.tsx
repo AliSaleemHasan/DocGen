@@ -1,34 +1,34 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import AppInput from "../AppInput";
-import { Mail, User } from "lucide-react";
+import { Check, Key } from "lucide-react";
 import { Button } from "../ui/button";
 
-const PersonalDetails = () => {
+const PasswordCard = () => {
   return (
     <Card className="  flex-1  ">
       <CardHeader>
-        <CardTitle>Personal Information</CardTitle>
+        <CardTitle>Password Management</CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col gap-4">
         <section>
           <AppInput
             className="max-h-8"
-            Icon={<User />}
-            inputProps={{ placeholder: "Full Name", type: "text" }}
+            Icon={<Key />}
+            inputProps={{ placeholder: "Password", type: "password" }}
           ></AppInput>
         </section>
 
         <section className="flex items-center gap-2 ">
           <AppInput
             className="max-h-8"
-            Icon={<Mail />}
-            inputProps={{ placeholder: "Email..", type: "email" }}
+            Icon={<Check />}
+            inputProps={{ placeholder: "Confirm Password..", type: "password" }}
           ></AppInput>
-          <Button>Update Profile</Button>
+          <Button>Change Password</Button>
         </section>
       </CardContent>
     </Card>
   );
 };
 
-export default PersonalDetails;
+export default PasswordCard;
