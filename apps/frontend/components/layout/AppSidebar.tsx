@@ -24,11 +24,11 @@ const items = [
     url: "/",
     icon: PlusCircle,
   },
-  {
-    title: "History",
-    url: "#",
-    icon: History,
-  },
+  // {
+  //   title: "History",
+  //   url: "#",
+  //   icon: History,
+  // },
   {
     title: "Account Settings",
     url: "/settings",
