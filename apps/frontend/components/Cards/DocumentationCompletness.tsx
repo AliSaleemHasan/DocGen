@@ -1,14 +1,5 @@
-import React from "react";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "../ui/card";
-import AppInput from "../AppInput";
-import { Check, FolderCode, Globe } from "lucide-react";
-import { Button } from "../ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Check } from "lucide-react";
 
 const DocumentationCompletness = () => {
   return (
