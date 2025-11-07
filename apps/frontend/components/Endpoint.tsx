@@ -12,14 +12,14 @@ interface Props {
 const Endpoint = ({ endpoint }: Props) => {
   return (
     <ListItem className="">
-      <ListItemDescreption>
-        <h4 className="text-sm">{endpoint.url}</h4>
+      <ListItemDescreption className="flex flex-row  items-center justify-start gap-4  ">
         <div
-          className="text-white text-sm p-3 px-4 rounded-lg flex items-center justify-center"
+          className="text-white text-sm w-fit p-2 px-4 min-w-20 rounded-lg "
           style={{ background: endpoint_colors[endpoint.method] }}
         >
-          <p>{endpoint.method}</p>
+          <p className="text-center">{endpoint.method}</p>
         </div>
+        <h4 className="text-sm">{endpoint.url}</h4>
       </ListItemDescreption>
       <Button className="cursor-pointer" variant={"outline"} asChild>
         <ListItemAction>
