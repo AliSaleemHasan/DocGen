@@ -5,7 +5,7 @@ const ThemeCard = () => {
   return (
     <Card className="  flex-1  ">
       <CardContent className="flex  gap-4 justify-between flex-wrap">
-        <section className="flex items-center justify-center max-w-sm text-clip  ">
+        <section className="flex items-center justify-center max-w-sm text-clip  gap-5 flex-wrap ">
           <h2 className="max-w-32 text-clip leading-none font-semibold">
             DocGen Theme
           </h2>

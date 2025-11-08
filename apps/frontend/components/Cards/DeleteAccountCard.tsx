@@ -5,8 +5,8 @@ const DeleteAccountCard = () => {
   return (
     <Card className="  flex-1  ">
       <CardContent className="flex  gap-4 justify-between flex-wrap">
-        <section className="flex items-center justify-center text-clip gap-5  ">
-          <h2 className="max-w-32 text-clip leading-none font-semibold ">
+        <section className="flex items-center justify-center text-clip gap-5 flex-wrap  ">
+          <h2 className="max-w-32 text-clip leading-none font-semibold  text-center">
             Danger Zone
           </h2>
 

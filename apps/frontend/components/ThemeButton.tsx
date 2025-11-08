@@ -13,7 +13,7 @@ const ThemeButton = ({ name }: Props) => {
   return (
     <Button variant={"link"} onClick={handleChangeTheme} asChild>
       <div
-        className={`w-72 h-40  rounded-md  border-2 border-primary  shadow-lg ${
+        className={`w-[min(18rem,60vw)] h-40  rounded-md  border-2 border-primary  shadow-lg ${
           name === "dark" ? "bg-black" : "bg-white"
         }`}
       >

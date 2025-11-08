@@ -36,7 +36,7 @@ export default async function RootLayout({
         <ThemeProvider>
           <SidebarProvider defaultOpen={defaultOpen}>
             <SidebarTrigger
-              className=" text-primary absolute top-5 left-5 z-40 "
+              className=" md:hidden text-primary absolute top-5 left-5 z-40 "
               variant={"secondary"}
             />
 
