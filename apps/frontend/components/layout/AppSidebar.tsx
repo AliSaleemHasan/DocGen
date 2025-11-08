@@ -37,24 +37,25 @@ const items = [
 ];
 
 function AppSidebar() {
-  const { open } = useSidebar();
+  const { open, openMobile } = useSidebar();
   return (
     <Sidebar collapsible="icon">
       <div className=" w-full md:flex justify-end hidden ">
         <SidebarTrigger className="px-6 text-primary " variant={"secondary"} />
       </div>
 
-      {open && (
-        <SidebarHeader>
-          <Link href={"/"} className="w-full h-full flex items-center gap-2">
-            <Image src={Logo.src} width={100} height={50} alt="SidebarLogo" />
-            <h2 className="text-xs">
-              Generate REST Docs With{" "}
-              <strong className="text-primary">Ease</strong>
-            </h2>
-          </Link>
-        </SidebarHeader>
-      )}
+      {open ||
+        (openMobile && (
+          <SidebarHeader>
+            <Link href={"/"} className="w-full h-full flex items-center gap-2">
+              <Image src={Logo.src} width={100} height={50} alt="SidebarLogo" />
+              <h2 className="text-xs">
+                Generate REST Docs With{" "}
+                <strong className="text-primary">Ease</strong>
+              </h2>
+            </Link>
+          </SidebarHeader>
+        ))}
       <SidebarContent>
         <SidebarMenu className="bg-card">
           {items.map((item) => (
