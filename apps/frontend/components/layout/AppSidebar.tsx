@@ -40,7 +40,7 @@ function AppSidebar() {
   const { open } = useSidebar();
   return (
     <Sidebar collapsible="icon">
-      <div className=" w-full flex justify-end">
+      <div className=" w-full md:flex justify-end hidden ">
         <SidebarTrigger className="px-6 text-primary " variant={"secondary"} />
       </div>
 

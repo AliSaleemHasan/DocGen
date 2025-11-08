@@ -35,6 +35,11 @@ export default async function RootLayout({
       >
         <ThemeProvider>
           <SidebarProvider defaultOpen={defaultOpen}>
+            <SidebarTrigger
+              className=" text-primary absolute top-5 left-5 z-40 "
+              variant={"secondary"}
+            />
+
             <AppSidebar />
 
             <main className=" px-10 flex min-h-screen  w-full  flex-col items-center justify-between   sm:items-start ">
