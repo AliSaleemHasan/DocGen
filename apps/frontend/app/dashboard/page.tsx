@@ -18,14 +18,14 @@ const DashboardPage = () => {
   return (
     <div className=" container mx-auto   ">
       <MainHeader title="Dashbard - This will represent single Documentation entry for a project (for now)" />
-      <div className="grid grid-cols-5 gap-5 ">
-        <section className="flex col-span-2 flex-col gap-5">
+      <div className="grid  grid-cols-5 gap-5 ">
+        <section className="flex col-span-5  md:col-span-2 flex-col gap-5">
           <DocumentationCompleteness />
           <SecurityGapCard />
           <UsedFilesCard></UsedFilesCard>
         </section>
 
-        <section className="col-span-3">
+        <section className="col-span-5 md:col-span-3">
           <EndpointsCard endpoints={endpoints} />
         </section>
       </div>
