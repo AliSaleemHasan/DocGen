@@ -42,7 +42,7 @@ export default async function RootLayout({
 
             <AppSidebar />
 
-            <main className=" px-10 flex min-h-screen  w-full  flex-col items-center justify-between   sm:items-start ">
+            <main className="px-1 md:px-10 flex min-h-screen  w-full  flex-col items-center justify-between   sm:items-start ">
               {children}
             </main>
           </SidebarProvider>

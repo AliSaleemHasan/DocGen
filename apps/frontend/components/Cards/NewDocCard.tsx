@@ -14,7 +14,7 @@ const NewDocCard = () => {
   return (
     <Card
       className=" flex-1 flex flex-col justify-between  
-          min-h-[70vh] px-5  min-w-md"
+          md:min-h-[70vh] px-[1px] md:px-5  md:min-w-md"
     >
       <CardHeader>
         <CardTitle className="text-center text-2xl">

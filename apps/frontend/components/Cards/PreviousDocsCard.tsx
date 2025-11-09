@@ -2,7 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import PreviousDocsListItem from "../PreviousDocsListItem";
 const PreviousDocsCard = () => {
   return (
-    <Card className=" min-h-[70vh] max-h-[70vh]  flex-1 min-w-md">
+    <Card className="w-screen md:min-h-[70vh] md:max-h-[70vh]   flex-1 md:min-w-md">
       <CardHeader>
         <CardTitle>Previous Documentation</CardTitle>
       </CardHeader>
