@@ -12,7 +12,7 @@ interface Props {
 }
 const EndpointsCard = ({ endpoints }: Props) => {
   return (
-    <Card className=" min-h-[70vh] max-h-[70vh]  flex-1 min-w-md">
+    <Card className=" md:min-h-[70vh] md:max-h-[70vh]  flex-1 md:min-w-md">
       <CardHeader>
         <CardTitle className="flex flex-col gap-5">
           <section className="flex items-center justify-between">

@@ -26,7 +26,7 @@ const Endpoint = ({ endpoint }: Props) => {
       onOpenChange={setIsOpen}
       className="my-2 bg-muted/40 "
     >
-      <ListItem className="">
+      <ListItem className="flex items-center gap-5 flex-wrap">
         <ListItemDescreption className="flex flex-row  items-center justify-start gap-4  ">
           <div
             className="text-white text-sm w-fit p-2 px-4 min-w-20 rounded-lg "
